@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title> New Document </title>
+    <meta charset=utf-8>
+</head>
+
+<body>
+    <script type="text/javascript">
+    function setTab(name, cursel, n) {
+        for (i = 1; i <= n; i++) {
+            var menu = document.getElementById(name + i);
+
+            var con = document.getElementById("con_" + name + "_" + i);
+            menu.className = i == cursel ? "box_hover" : "";
+            con.style.display = i == cursel ? "block" : "none";
+        }
+    }
+    </script>
+    <style type="text/css">
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .box_tab {
+        list-style: none;
+    }
+    
+    .box {
+        height: 30px;
+        background: #F87D06;
+        height: 42px;
+        color: #fff;
+    }
+    
+    .box_tab a {
+        color: #333;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+    }
+    
+    .box_tab li {
+        float: left;
+    }
+    /*    .box_tab li:hover a {
+        background: #FF3D3D;
+        color: #fff;
+    }*/
+    
+    .box_tab .box_hover a {
+        background: #FF3D3D;
+        color: #fff;
+    }
+    
+    .boder {
+        width: 500px;
+        height: 500px;
+        overflow-y: scroll;
+        border: 2px solid#CCC;
+        margin: auto;
+        padding: 10px 40px;
+        resize: both;
+        overflow: auto;
+    }
+    
+    .boder img {
+        resize: both;
+        overflow: auto;
+        border: 2px solid#CCC;
+        padding: 10px 40px;
+    }
+    
+    .box_bot {
+        float: left;
+        width: 100%;
+        height: 300px;
+        border: 1px solid #F87D06;
+        border-top: none;
+    }
+    </style>
+    <div class="box">
+        <ul class="box_tab">
+            <li style="line-height: 41px;padding: 0 20px;font-size: 18px;">各地资讯</li>
+            <li id="box1" onmouseover="setTab('box',1,11)" class="box_hover"><a href="">南昌</a></li>
+            <li id="box2" onmouseover="setTab('box',2,11)"><a href="">赣州</a></li>
+            <li id="box3" onmouseover="setTab('box',3,11)"><a href="">吉安</a></li>
+            <li id="box4" onmouseover="setTab('box',4,11)"><a href="">九江</a></li>
+            <li id="box5" onmouseover="setTab('box',5,11)"><a href="">上饶</a></li>
+            <li id="box6" onmouseover="setTab('box',6,11)"><a href="">抚州</a></li>
+            <li id="box7" onmouseover="setTab('box',7,11)"><a href="">宜春</a></li>
+            <li id="box8" onmouseover="setTab('box',8,11)"><a href="">萍乡</a></li>
+            <li id="box9" onmouseover="setTab('box',9,11)"><a href="">景德镇</a></li>
+            <li id="box10" onmouseover="setTab('box',10,11)"><a href="">新余</a></li>
+            <li id="box11" onmouseover="setTab('box',11,11)"><a href="">鹰潭</a></li>
+        </ul>
+    </div>
+    <div class="box_bot">
+        <div id="con_box_1">
+            南昌
+        </div>
+        <div id="con_box_2" style="display:none;">
+            赣州
+        </div>
+        <div id="con_box_3" style="display:none;">
+            吉安
+        </div>
+        <div id="con_box_4" style="display:none;">
+            九江
+        </div>
+        <div id="con_box_5" style="display:none;">
+            上饶
+        </div>
+        <div id="con_box_6" style="display:none;">
+            抚州
+        </div>
+        <div id="con_box_7" style="display:none;">
+            宜春
+        </div>
+        <div id="con_box_8" style="display:none;">
+            萍乡
+        </div>
+        <div id="con_box_9" style="display:none;">
+            景德镇
+        </div>
+        <div id="con_box_10" style="display:none;">
+            新余
+        </div>
+        <div id="con_box_11" style="display:none;">
+            鹰潭
+        </div>
+    </div>
+</body>
+
+</html>
